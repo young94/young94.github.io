@@ -1,194 +1,541 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />	
-	<title>关于 我</title>
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>微金所</title>
+    <!-- Bootstrap -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="lib/html5shiv.min.js"></script>
+    <script src="lib/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="css/index.css"/>
 </head>
-<body class="loading-process">
-<div class="loading">
-	<div class="loading-circle"></div>
-	<div class="loading-avatar"><img src="images/avatar@2x.jpg" alt="" width="100" height="100"></div>
-	<div class="loading-info">正在努力加载中...</div>
-</div>
-<div class="section-header">
-	<div class="section">
-		<nav class="nav" role="navigation">
-			<ul>
-				<li class="nav-about fade fade1"><a href="#about">关于</a></li>
-				<li class="nav-works fade fade4"><a href="#works">作品</a></li>
-				<li class="fade back-home"><a href="#top">首页</a></li>
-				<li class="nav-skill fade fade2"><a href="#skill">能力</a></li>
-				<li class="nav-contact fade fade3"><a href="#contact">联系</a></li>
-			</ul>
-		</nav>
-	</div>
-	<div class="nav-bg"></div>
-</div>
-<div class="home-bg">
-	<img src="images/home-bg.jpg" alt="" width="1000" height="667">
-</div>
-<div class="section-wrap section-fristpage" data-slide="1"  >
-	<div class="section">
-		<div class="section-content">
-			<p class="fade fade1">Hi，我是 Aaron</p>
-			<p class="fade fade2">欢迎光临脚本之家！</p>
-			<p class="fade fade3">想了解更多，往下滚动哦 ^_^</p>
-		</div>
-		<a class="button2 scroll-tip fade fade4" data-slide="3" title="">向下滚动</a>
-	</div>
-</div>
-<div id="about" data-slide="2" data-stellar-background-ratio="0.3" class="section-wrap section-about">
-	<div class="section">
-		<div class="about-content clearfix section-content">
-			<div class="introli">
-			  <span class="left_icon"><img class="bio-text bio-icon-1" src="images/bio-icon-1.png" data-stellar-ratio="0.7" ></span>
-			  <span class="right_content "><img class="bio-text bio-text-1" src="images/bio-text-1.png" data-stellar-ratio="0.7" ></span>
-			</div>
-			<div class="introli">
-			  <span class="left_icon"><img class="bio-text bio-icon-2" src="images/bio-icon-2.png" data-stellar-ratio="0.7" ></span>
-			  <span class="right_content"><img class="bio-text bio-text-2" src="images/bio-text-2.png" data-stellar-ratio="0.7" ></span>
-			</div>
-			<div class="introli">
-			  <span class="left_icon"><img class="bio-text bio-icon-3" src="images/bio-icon-3.png" data-stellar-ratio="0.7" ></span>
-			  <span class="right_content"><img class="bio-text bio-text-3" src="images/bio-text-3.png" data-stellar-ratio="0.7" ></span>
-			</div>
+<body>
+<!--头部-->
+<header class="wjs-header hidden-sm hidden-xs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <span class="wjs-icon wjs-icon-phone"></span>
+                手机微金所
+                <span class="glyphicon glyphicon-menu-down"></span>
+                <img src="images/code.jpg" alt="" class="code"/>
+            </div>
+            <div class="col-md-5">
+                <span class="wjs-icon wjs-icon-tel"></span>
+                4006-89-4006（服务时间：9:00-21:00）
+            </div>
+            <div class="col-md-2">
+                <a href="#">常见问题</a>
+                <a href="#">财富登录</a>
+            </div>
+            <div class="col-md-3">
+                <a href="#" role="button" class="btn btn-xs btn-register">免费注册</a>
+                <a href="#" role="button" class="btn btn-xs btn-login" data-toggle="modal" data-target="#login">登录</a>
+            </div>
+        </div>
+    </div>
+</header>
 
-		</div>
+<!--导航-->
+<nav class="navbar wjs-navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <span class="wjs-icon wjs-icon-logo"></span>
+                <span class="wjs-icon wjs-icon-word"></span>
+            </a>
+        </div>
 
-	</div>
-	<a class="button2 dark-button2 scroll-tip" style="background-position:0 -60px;" data-slide="3" title=""></a>
-</div>
-<div id="works" class="section-wrap section-works" data-slide="3" >
-	<div class="section">
-		<div class="works-content section-content">
-			<h1>前端作品</h1>
-			<div class="works-list clearfix">
-				<div class="works-item first fade fade1">
-					<a href="http://www.jb51.net//" target="_blank">
-						<img src="images/yizaojia.jpg" alt="" width="300" height="180">
-						<div class="work-info">
-							<h2>脚本之家官网</h2>
-							<p><strong>开发时间</strong>：2014年3月<br>
-							<strong>工作详情</strong>：框架设计及前端制作。</p>
-						</div>
-					</a>
-				</div>
-				<div class="works-item fade fade2">
-					<a href="http://www.jb51.net/" target="_blank">
-						<img src="images/91zaojia.jpg" alt="" width="300" height="180">
-						<div class="work-info">
-							<h2>脚本之家商城</h2>
-							<p><strong>开发时间</strong>：2013年10月<br>
-							<strong>工作详情</strong>：页面设计及前端制作。</p>
-						</div>
-					</a>
-				</div>
-				<div class="works-item fade fade3">
-					<a href="http://www.jb51.net/" target="_blank">
-						<img src="images/wenku.jpg" alt="" width="300" height="180">
-						<div class="work-info">
-							<h2>脚本之家云文库</h2>
-							<p><strong>开发时间</strong>：2013年12月<br>
-							<strong>工作详情</strong>：页面设计及前端绑定和制作。</p>
-						</div>
-					</a>
-				</div>
-				<div class="works-item first fade fade4">
-					<a href="http://www.jb51.net/" target="_blank">
-						<img src="images/shinedeliver.jpg" alt="" width="300" height="180">
-						<div class="work-info">
-							<h2>脚本之家官网</h2>
-							<p><strong>开发时间</strong>：2012年11月<br>
-							<strong>工作详情</strong>：独立开发和制作。</p>
-						</div>
-					</a>
-				</div>
-				<div class="works-item fade fade2">
-					<a>
-						<img src="images/wxshop.jpg" alt="" width="300" height="180">
-						<div class="work-info">
-							<h2>微信商城</h2>
-							<p><strong>开发时间</strong>：2014年05月<br>
-							<strong>工作详情</strong>：前端页面开发及绑定。</p>
-						</div>
-					</a>
-				</div>
-			</div>
-			<a class="more-link" href="page/product">查看更多</a>
-		</div>
-		<a class="button2 scroll-tip fade fade4" data-slide="4" title="">向下滚动</a>
-	</div>
-</div>
-<div id="skill" class="section-wrap section-skill" data-slide="4">
-	<div class="section">
-		<div class="skill-content section-content">
-			<h1>相关技能</h1>
-			<ul>
-				<li class="fade fade1">熟练掌握语义化的 HTML 和具有兼容性的 CSS 模式，熟练手写符合 W3C 标准的结构和代码。</li>
-				<li class="fade fade3">对 可用性、可访问性、前端性能优化、最优实践 等有一定的了解和实践。</li>
-				<li class="fade fade2">对 HTML5 和 CSS3 有一定了解。</li>
-				<li class="fade fade4">熟练掌握 ST2 、Emmet、Sass 等等前端开发和团队协作工具。</li>
-				<li class="fade fade4">熟练掌握 jQuery，实现日常需要的交互效果。</li>
-				<li class="fade fade3">熟悉EXTJS，Nodejs，MySQl，有一定 PHP 后端相关知识。</li>
-				<li class="fade fade2">了解 Ajax 工作原理和实现方法。</li>
-				<li class="fade fade2">对前端canvas，svg有一定了解。</li>
-				<li class="fade fade1">了解手机前端开发jquerymobile，zeptojs及angularjs等。</li>
-				<li class="fade fade4">服务器使用阿里云ECS，对 Linux 有一定了解。</li>
-				<li class="fade fade2">喜欢接触新事物，有一定的自学能力。</li>
-			</ul>
-		</div>
-	</div>
-	<a class="button2 scroll-tip fade fade4"  data-slide="5" title="">向下滚动</a>
-</div>
-<div id="contact" class="section-wrap section-contact" data-slide="5">
-	<div class="section">
-		<div class="contact-content clearfix section-content">
-			<h1>联系本人</h1>
-			<div class="left">
-				<div class="contact-ways fade fade1">
-					<h2>社交网络</h2>
-					<ul>
-						<li>邮箱：</li>
-						<li>Q Q ：</li>
-						<li>知乎：</li>
-						<li>微博：</li>
-						<li>Github：</li>
-					</ul>
-				</div>
-				<div class="contact-info fade fade2">
-					<p>虽然有社交网络，但是平时上的比较少，很多时候是只看不发！不过你可以关注我哦！</p>
-				</div>
-			</div>
-			<div class="right fade fade3">
-				<h2>项目外包</h2>
-				<p>如果你有前端相关的需求，可以联系我做外包，目前我主要做：</p>
-				<ul>
-					<li>网站布局设计及制作，网站页面制作。</li>
-					<li>根据需求，对网站前端进行修改和优化，或者转响应式处理。</li>
-					<li>企业网站建设及相关功能开发。</li>
-					<li>对于网站建设项目，我也有一些同行朋友可以推荐，也欢迎咨询！</li>
-				</ul>
-				<p><strong>适用浏览器</strong>：360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. 不支持IE8及以下浏览器。</p>
-				
-			</div>
-		</div>
-	</div>
-	<a class="button2 button2-2-top scroll-tip" id="gototops" data-slide="1" href="#top" style="background-position: -60px 0;width:80px;height:80px;" title=""></a>
-</div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="#">我要投资</a></li>
+                <li><a href="#">我要借贷</a></li>
+                <li><a href="#">平台介绍</a></li>
+                <li><a href="#">新手专区</a></li>
+                <li><a href="#">最新动态</a></li>
+                <li><a href="#">微平台</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" class="hidden-xs hidden-sm">个人中心</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-<div class="overlay"></div>
-<div class="state-indicator"></div>
+<!--banner-->
+<section class="wjs-banner">
+    <div id="myCarousel" class="carousel slide">
+        <!--角标-->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <!-- 轮播图片-->
+        <div class="carousel-inner">
+            <div class="active item">
+                <div class="pc-img hidden-xs" style="background-image: url('images/slide_01_2000x410.jpg')"></div>
+                <img class="m-img hidden-lg hidden-sm hidden-md" src="images/slide_01_640x340.jpg" alt=""/>
+            </div>
+            <div class="item">
+                <div class="pc-img hidden-xs" style="background-image: url('images/slide_02_2000x410.jpg')"></div>
+                <img class="m-img hidden-lg hidden-sm hidden-md" src="images/slide_02_640x340.jpg" alt=""/>
+            </div>
+            <div class="item">
+                <div class="pc-img hidden-xs" style="background-image: url('images/slide_03_2000x410.jpg')"></div>
+                <img class="m-img hidden-lg hidden-sm hidden-md" src="images/slide_03_640x340.jpg" alt=""/>
+            </div>
+            <div class="item">
+                <div class="pc-img hidden-xs" style="background-image: url('images/slide_04_2000x410.jpg')"></div>
+                <img class="m-img hidden-lg hidden-sm hidden-md" src="images/slide_04_640x340.jpg" alt=""/>
+            </div>
+        </div>
+        <!-- 左右箭头 -->
+        <a class="carousel-control left" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+</section>
 
-<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-<script src="js/global.js"></script>
-<script src="js/waypoints.min.js"></script>
-<script src="js/js.js"></script>
-<script src="js/jquery.stellar.min.js"></script>
+<!--信息模块-->
+<section class="wjs-info hidden-xs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <a href="#">
+                    <div class="media">
+                        <div class="media-left">
+                            <span class="wjs-icon wjs-icon-E907"></span>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">联合信息发布</h4>
+                            <p>与路透社共同发布利率指数报告</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="#">
+                    <div class="media">
+                        <div class="media-left">
+                            <span class="wjs-icon wjs-icon-E907"></span>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">联合信息发布</h4>
+                            <p>与路透社共同发布利率指数报告</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="#">
+                    <div class="media">
+                        <div class="media-left">
+                            <span class="wjs-icon wjs-icon-E907"></span>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">联合信息发布</h4>
+                            <p>与路透社共同发布利率指数报告</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="#">
+                    <div class="media">
+                        <div class="media-left">
+                            <span class="wjs-icon wjs-icon-E907"></span>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">联合信息发布</h4>
+                            <p>与路透社共同发布利率指数报告</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="#">
+                    <div class="media">
+                        <div class="media-left">
+                            <span class="wjs-icon wjs-icon-E907"></span>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">联合信息发布</h4>
+                            <p>与路透社共同发布利率指数报告</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="#">
+                    <div class="media">
+                        <div class="media-left">
+                            <span class="wjs-icon wjs-icon-E907"></span>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">联合信息发布</h4>
+                            <p>与路透社共同发布利率指数报告</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!--预约模块-->
+<section class="wjs-book">
+    <div class="container">
+        <div class="pull-left">
+            <span class="wjs-icon wjs-icon-E906"></span>
+            现在有 273 人在排队，累计预约交易成功 7571 次。 什么是预约投标？
+            <a href="#" class="book-link">立即预约</a>
+        </div>
+        <div class="pull-right hidden-xs hidden-sm">
+            <a href="#">
+                <span class="wjs-icon wjs-icon-E905"></span>
+                    微金所企业宣传片
+            </a>
+        </div>
+    </div>
+</section>
+
+<!--产品模块-->
+<section class="wjs-product">
+    <div class="container">
+        <div class="product-nav">
+                <!-- Nav tabs -->
+                <ul class="nav wjs-nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#tab1" aria-controls="home" role="tab" data-toggle="tab">特别推荐</a></li>
+                    <li role="presentation"><a href="#tab2" aria-controls="profile" role="tab" data-toggle="tab">微投资</a></li>
+                    <li role="presentation"><a href="#tab3" aria-controls="messages" role="tab" data-toggle="tab">微投资</a></li>
+                    <li role="presentation"><a href="#tab4" aria-controls="settings" role="tab" data-toggle="tab">微投资</a></li>
+                    <li role="presentation"><a href="#tab5" aria-controls="settings" role="tab" data-toggle="tab">微投资</a></li>
+                    <li role="presentation"><a href="#tab6" aria-controls="settings" role="tab" data-toggle="tab">微投资</a></li>
+                </ul>
+        </div>
+                <!-- Tab panes -->
+        <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="product-in active">
+                                <div class="product-right pull-right text-center">
+                                    <p><span>8</span>%</p>
+                                    <p>年利率</p>
+                                    <div class="tip">
+                                        <span class="bao" data-toggle="tooltip" data-placement="top" title="宝宝">宝</span>
+                                        <span class="bei" data-toggle="tooltip" data-placement="top" title="北京市">北</span>
+                                    </div>
+                                </div>
+                                <div class="product-left">
+                                    <h3>新手体验标1002期</h3>
+                                    <div class="pull-left text-left">
+                                        <p>起投金额(元)</p>
+                                        <p>0.01万</p>
+                                    </div>
+                                    <div class="pull-right text-right">
+                                        <p>起投金额(元)</p>
+                                        <p>0.01万</p>
+                                    </div>
+                                    <div class="pull-left text-left">
+                                        <p>已投标人数</p>
+                                        <p>0.02</p>
+                                    </div>
+                                    <div class="pull-right text-right">
+                                        <p>已投标人数</p>
+                                        <p>0.02</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="product-in">
+                                <div class="product-right pull-right text-center">
+                                    <p><span>8</span>%</p>
+                                    <p>年利率</p>
+                                    <div class="tip">
+                                        <span class="bao" data-toggle="tooltip" data-placement="top" title="宝宝">宝</span>
+                                        <span class="bei" data-toggle="tooltip" data-placement="top" title="北京市">北</span>
+                                    </div>
+                                </div>
+                                <div class="product-left">
+                                    <h3>新手体验标1002期</h3>
+                                    <div class="pull-left text-left">
+                                        <p>起投金额(元)</p>
+                                        <p>0.01万</p>
+                                    </div>
+                                    <div class="pull-right text-right">
+                                        <p>起投金额(元)</p>
+                                        <p>0.01万</p>
+                                    </div>
+                                    <div class="pull-left text-left">
+                                        <p>已投标人数</p>
+                                        <p>0.02</p>
+                                    </div>
+                                    <div class="pull-right text-right">
+                                        <p>已投标人数</p>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                                <span class="sr-only">60% Complete</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="product-in">
+                                <div class="product-right pull-right text-center">
+                                    <p><span>8</span>%</p>
+                                    <p>年利率</p>
+                                    <div class="tip">
+                                        <span class="bao" data-toggle="tooltip" data-placement="top" title="宝宝">宝</span>
+                                        <span class="bei" data-toggle="tooltip" data-placement="top" title="北京市">北</span>
+                                    </div>
+                                </div>
+                                <div class="product-left">
+                                    <h3>新手体验标1002期</h3>
+                                    <div class="pull-left text-left">
+                                        <p>起投金额(元)</p>
+                                        <p>0.01万</p>
+                                    </div>
+                                    <div class="pull-right text-right">
+                                        <p>起投金额(元)</p>
+                                        <p>0.01万</p>
+                                    </div>
+                                    <div class="pull-left text-left">
+                                        <p>已投标人数</p>
+                                        <p>0.02</p>
+                                    </div>
+                                    <div class="pull-right text-right">
+                                        <p>已投标人数</p>
+                                        <p>0.02</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="product-in">
+                                <div class="product-right pull-right text-center">
+                                    <p><span>8</span>%</p>
+                                    <p>年利率</p>
+                                    <div class="tip">
+                                        <span class="bao" data-toggle="tooltip" data-placement="top" title="宝宝">宝</span>
+                                        <span class="bei" data-toggle="tooltip" data-placement="top" title="北京市">北</span>
+                                    </div>
+                                </div>
+                                <div class="product-left">
+                                    <h3>新手体验标1002期</h3>
+                                    <div class="pull-left text-left">
+                                        <p>起投金额(元)</p>
+                                        <p>0.01万</p>
+                                    </div>
+                                    <div class="pull-right text-right">
+                                        <p>起投金额(元)</p>
+                                        <p>0.01万</p>
+                                    </div>
+                                    <div class="pull-left text-left">
+                                        <p>已投标人数</p>
+                                        <p>0.02</p>
+                                    </div>
+                                    <div class="pull-right text-right">
+                                        <p>已投标人数</p>
+                                        <p>0.02</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="product-in">
+                                <div class="product-right pull-right text-center">
+                                    <p><span>8</span>%</p>
+                                    <p>年利率</p>
+                                    <div class="tip">
+                                        <span class="bao" data-toggle="tooltip" data-placement="top" title="宝宝">宝</span>
+                                        <span class="bei" data-toggle="tooltip" data-placement="top" title="北京市">北</span>
+                                    </div>
+                                </div>
+                                <div class="product-left">
+                                    <h3>新手体验标1002期</h3>
+                                    <div class="pull-left text-left">
+                                        <p>起投金额(元)</p>
+                                        <p>0.01万</p>
+                                    </div>
+                                    <div class="pull-right text-right">
+                                        <p>起投金额(元)</p>
+                                        <p>0.01万</p>
+                                    </div>
+                                    <div class="pull-left text-left">
+                                        <p>已投标人数</p>
+                                        <p>0.02</p>
+                                    </div>
+                                    <div class="pull-right text-right">
+                                        <p>已投标人数</p>
+                                        <p>0.02</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="product-in">
+                                <div class="product-right pull-right text-center">
+                                    <p><span>8</span>%</p>
+                                    <p>年利率</p>
+                                    <div class="tip">
+                                        <span class="bao" data-toggle="tooltip" data-placement="top" title="宝宝">宝</span>
+                                        <span class="bei" data-toggle="tooltip" data-placement="top" title="北京市">北</span>
+                                    </div>
+                                </div>
+                                <div class="product-left">
+                                    <h3>新手体验标1002期</h3>
+                                    <div class="pull-left text-left">
+                                        <p>起投金额(元)</p>
+                                        <p>0.01万</p>
+                                    </div>
+                                    <div class="pull-right text-right">
+                                        <p>起投金额(元)</p>
+                                        <p>0.01万</p>
+                                    </div>
+                                    <div class="pull-left text-left">
+                                        <p>已投标人数</p>
+                                        <p>0.02</p>
+                                    </div>
+                                    <div class="pull-right text-right">
+                                        <p>已投标人数</p>
+                                        <p>0.02</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="profile">
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="messages">
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="settings">
+
+                </div>
+            </div>
+
+    </div>
+</section>
+
+<!--新闻模块-->
+<section class="wjs-news">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-md-offset-2 news-title">
+                <h3>全部新闻</h3>
+            </div>
+            <div class="col-md-1">
+                <!-- Nav tabs -->
+                <ul class="nav news-nav-tabs" role="tablist">
+                    <div class="line hidden-xs hidden-sm"></div>
+                    <li role="presentation" class="active"><a href="#news1" aria-controls="home" role="tab" data-toggle="tab"><span class="wjs-icon wjs-icon-new01"></span></a></li>
+                    <li role="presentation"><a href="#news2" aria-controls="profile" role="tab" data-toggle="tab"><span class="wjs-icon wjs-icon-new02"></span></a></li>
+                    <li role="presentation"><a href="#news3" aria-controls="messages" role="tab" data-toggle="tab"><span class="wjs-icon wjs-icon-new03"></span></a></li>
+                    <li role="presentation"><a href="#news4" aria-controls="settings" role="tab" data-toggle="tab"><span class="wjs-icon wjs-icon-new04"></span></a></li>
+                </ul>
+            </div>
+            <div class="col-md-7">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="news1">
+                        <ul>
+                            <li><a href="#">2016-01-22 【微还款】一周还款公告2016年1月18日-1月24日</a></li>
+                            <li><a href="#">2016-01-22 【微还款】一周还款公告2016年1月18日-1月24日</a></li>
+                            <li><a href="#">2016-01-22 【微还款】一周还款公告2016年1月18日-1月24日</a></li>
+                            <li><a href="#">2016-01-22 【微还款】一周还款公告2016年1月18日-1月24日</a></li>
+                            <li><a href="#">2016-01-22 【微还款】一周还款公告2016年1月18日-1月24日</a></li>
+                            <li><a href="#">2016-01-22 【微还款】一周还款公告2016年1月18日-1月24日</a></li>
+                            <li><a href="#">2016-01-22 【微还款】一周还款公告2016年1月18日-1月24日</a></li>
+                            <li><a href="#">2016-01-22 【微还款】一周还款公告2016年1月18日-1月24日</a></li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="news2">...</div>
+                    <div role="tabpanel" class="tab-pane" id="news3">...</div>
+                    <div role="tabpanel" class="tab-pane" id="news4">...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--合作伙伴-->
+<section class="wjs-partner">
+    <div class="container">
+        <div class="row">
+            <h3 class="text-center">合作伙伴</h3>
+            <ul>
+                <li><a href="#"><span class="wjs-icon wjs-icon-partner01"></span></a></li>
+                <li><a href="#"><span class="wjs-icon wjs-icon-partner02"></span></a></li>
+                <li><a href="#"><span class="wjs-icon wjs-icon-partner03"></span></a></li>
+                <li><a href="#"><span class="wjs-icon wjs-icon-partner04"></span></a></li>
+                <li><a href="#"><span class="wjs-icon wjs-icon-partner05"></span></a></li>
+                <li><a href="#"><span class="wjs-icon wjs-icon-partner06"></span></a></li>
+                <li><a href="#"><span class="wjs-icon wjs-icon-partner07"></span></a></li>
+                <li><a href="#"><span class="wjs-icon wjs-icon-partner08"></span></a></li>
+                <li><a href="#"><span class="wjs-icon wjs-icon-partner09"></span></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div class="modal fade" id="login">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">用户登录</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <p class="form-control-static">email@example.com</p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary">确定</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!--底部-->
+<footer></footer>
 </body>
-<div style="display:none"><script src="js/tj.js"></script></div>
-<script src="js/yxj.js" type="text/javascript"></script>
 </html>
-
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
